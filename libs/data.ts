@@ -1,8 +1,8 @@
 import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
+import { GrAchievement } from 'react-icons/gr';
 import Axifiveth from '@/public/Axifiveth.png';
+import Aximart from '@/public/Aximart.png';
 
 export const links = [
   {
@@ -33,7 +33,14 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated Krian 1 Vocational High School',
+    title: '2nd place in web design programming competition',
+    location: 'Universitas Muhammadiyah Sidoarjo',
+    description: '',
+    icon: React.createElement(GrAchievement),
+    date: '2023',
+  },
+  {
+    title: 'Graduated from SMK Krian 1',
     location: 'Sidoarjo, Jawa Timur',
     description: 'I graduated from the software enginnering department with many achievements, such as second place in web design programming at the national level',
     icon: React.createElement(LuGraduationCap),
@@ -51,15 +58,17 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: 'Axifiveth',
-    description: 'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
+    description: 'Axifiveth is an interactive website like Twitter. Developed with nextjs technology and also firebase.',
     tags: ['React', 'Next.js', 'Tailwind', 'Redux', 'Firebase'],
     imageUrl: Axifiveth,
+    link: 'https://axifiveth.vercel.app/',
   },
   {
     title: 'Aximart',
-    description: 'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
+    description: 'Aximart is a buying and selling website developed to fulfill school assignments.',
     tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: Axifiveth,
+    imageUrl: Aximart,
+    link: 'https://aximart.vercel.app/',
   },
 ] as const;
 
